@@ -3,9 +3,14 @@ import Header from '../components/Header'
 const Index = (props) => (
     <div>
         <Header/>
-        <h1>Hello</h1>
-        <a href='#'>Hi again</a>
-        <style jsx>{``}</style>
+        <style jsx global>{`
+            @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+
+            body{
+                margin: 0;
+                font-family: 'Roboto Condensed', sans-serif;
+            }    
+        `}</style>
     </div>
 );
 
