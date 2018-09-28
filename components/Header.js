@@ -1,28 +1,29 @@
 import {Component, Fragment} from 'react';
 import {FaGithub, FaLinkedin, FaEnvelope} from 'react-icons/fa';
-import BorderedButton from './BorderedButton';
 import IconBorderedButton from './IconBorderedButton';
+import Colors from '../constants/Colors'
 
 export default class Header extends Component{
     state={
         color:'black'
     }
 
-    _renderIconBorderedButton = ({icon,href}) => (
+    _renderIconBorderedButton = (key, {icon,href}) => (
         <IconBorderedButton 
             borderWidth='2px' 
             borderRadius='100px' 
             iconSize={30} 
             icon={icon}
-            color='#4BE15A'
-            iconColor='#4BE15A'
+            color={Colors.primary}
+            iconColor={Colors.primary}
             href={href}
             marginLeft='10px'
+            key={key}
         />
     );
     _renderLinks = icons => (
         <div className='links'>
-            {icons.map(icon => this._renderIconBorderedButton(icon))}
+            {icons.map((icon,index) => this._renderIconBorderedButton(index, icon))}
             <style jsx>{`
                 .links{
                     display: grid;
@@ -73,7 +74,7 @@ export default class Header extends Component{
 
                     .title h1{
                         font-size: 64px;
-                        color: #333;
+                        color: ${Colors.grayDark};
                         font-weight: bold;
                         margin: 0px 25px;
                         
@@ -81,14 +82,14 @@ export default class Header extends Component{
 
                     .title h2{
                         font-size: 36px;
-                        color: #888;
+                        color: ${Colors.grayLight};
                         margin: 0px 25px;
                         font-weight: 900;
                     }
 
                     .title h3{
                         font-size: 32px;
-                        color: #888;
+                        color: ${Colors.grayLight};
                         margin: 0px 25px;
                         font-weight: 100;
                     }
