@@ -5,7 +5,7 @@ const Index = (props) => (
         <Header/>
         <Intro/>
         <style jsx global>{`
-            @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed");
+            @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700");
 
             body{
                 margin: 0;

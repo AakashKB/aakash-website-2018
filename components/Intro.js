@@ -3,13 +3,68 @@ import Colors from '../constants/Colors';
 import ExpCard from './ExpCard';
 
 export default class Intro extends Component{
-    render(){
+
+    _renderExpCards = () => {
         const languages = ['Language','Language','Language','Language','Language','Tool','Tool'];
         const exp = [
             'I did this with that using this and that',
             'I did this with that using this and that',
             'I did this with that using this and that'
         ];
+
+        return(
+            <div className="exp-card-container">
+                <ExpCard
+                    gridColumn='2/3'
+                    company='Company'
+                    role='Role'
+                    startMonth='Jan'
+                    startYear='2018'
+                    endMonth='Dec'
+                    endYear='2018'
+                    languages={languages}
+                    exp={exp}
+                />
+                <ExpCard 
+                    gridColumn='3/4'
+                    company='Company'
+                    role='Role'
+                    startMonth='Jan'
+                    startYear='2018'
+                    endMonth='Dec'
+                    endYear='2018'
+                    languages={languages}
+                    exp={exp}
+                />
+                <ExpCard 
+                    gridColumn='4/5'
+                    company='Company'
+                    role='Role'
+                    startMonth='Jan'
+                    startYear='2018'
+                    endMonth='Dec'
+                    endYear='2018'
+                    languages={languages}
+                    exp={exp}
+                />
+                <style jsx>{`
+                    .exp-card-container{
+                        grid-row: 5/7;
+                        grid-column: 1/2;
+                        display: grid;
+                        grid-template-columns: 5% 1fr 1fr 1fr 5%;
+                    }
+                    @media only screen and (max-width: 768px) {
+                        .exp-card-container{
+                            grid-template-columns: 5% 1fr 5%;
+                            grid-template-rows: 1fr 1fr 1fr;
+                        }
+                    }
+                `}</style>
+            </div>
+    );}
+
+    render(){
         return(
             <section>
                 <div className='background'></div>
@@ -36,49 +91,7 @@ export default class Intro extends Component{
                     </p>
                 </div>
                 <h1>Experience</h1>
-                <div className="exp-card-container">
-                    <ExpCard 
-                        gridColumn='2/3'
-                        company='Company'
-                        role='Role'
-                        startMonth='January'
-                        startYear='2018'
-                        endMonth='December'
-                        endYear='2018'
-                        languages={languages}
-                        exp={exp}
-                    />
-                    <ExpCard 
-                        gridColumn='3/4'
-                        company='Company'
-                        role='Role'
-                        startMonth='January'
-                        startYear='2018'
-                        endMonth='December'
-                        endYear='2018'
-                        languages={['Language','Language','Language','Language','Language','Tool','Tool']}
-                        exp={[
-                            'I did this with that using this and that',
-                            'I did this with that using this and that',
-                            'I did this with that using this and that'
-                        ]}
-                    />
-                    <ExpCard 
-                        gridColumn='4/5'
-                        company='Company'
-                        role='Role'
-                        startMonth='January'
-                        startYear='2018'
-                        endMonth='December'
-                        endYear='2018'
-                        languages={['Language','Language','Language','Language','Language','Tool','Tool']}
-                        exp={[
-                            'I did this with that using this and that',
-                            'I did this with that using this and that',
-                            'I did this with that using this and that'
-                        ]}
-                    />
-                </div>
+                {this._renderExpCards()}
                 <style jsx>{`
                     section{
                         display: grid;
@@ -90,9 +103,9 @@ export default class Intro extends Component{
                     }
 
                     .background{
-                        background-color: ${Colors.primary};
                         grid-row: 2/6;
                         grid-column: 1/2;
+                        background-color: ${Colors.primary};
                     }
 
                     img{
@@ -102,11 +115,11 @@ export default class Intro extends Component{
                     }
 
                     h1{
-                        font-size: 48px;
-                        font-weight: 900;
-                        margin: 50px 200px 10px;
-                        grid-row: 4/5;
+                        grid-row: 4/5;  
                         grid-column: 1/2;
+                        font-size: 48px;
+                        font-weight: 700;
+                        margin: 50px 10% 10px;
                     }
 
                     .content{
@@ -116,23 +129,24 @@ export default class Intro extends Component{
                     }
 
                     .content h1{
-                        font-size: 48px;
-                        font-weight: 900;
-                        margin: 25px 200px 10px;
+                        margin-top: 25px;
                     }
 
                     .content p{
                         font-size: 36px;
-                        font-weight: 100;
-                        margin: 0px 150px;
+                        font-weight: 300;
+                        margin: 0px 10%;
                     }
-                    .exp-card-container{
-                        grid-row: 5/7;
-                        grid-column: 1/2;
-                        display: grid;
-                        grid-template-columns: 5% 1fr 1fr 1fr 5%;
+
+                    @media only screen and (max-width: 768px) {
+                        h1{
+                            font-size: 36px;
+                        }
+
+                        .content p{
+                            font-size: 24px;
+                        }
                     }
-                    
                 `}</style>
             </section>
         );

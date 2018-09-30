@@ -84,14 +84,14 @@ export default class Header extends Component{
                         font-size: 36px;
                         color: ${Colors.grayLight};
                         margin: 0px 25px;
-                        font-weight: 900;
+                        font-weight: 700;
                     }
 
                     .title h3{
                         font-size: 32px;
                         color: ${Colors.grayLight};
                         margin: 0px 25px;
-                        font-weight: 100;
+                        font-weight: 300;
                     }
 
                     @media only screen and (max-width: 768px) {
