@@ -78,12 +78,10 @@ export default class Skills extends Component{
             }
         ];
         return(
-            <section className='skills-section'>
+            <section className='section-skills'>
                 <h1>Skills at a glance</h1>
                 <div className="skills-container">
-                    <div className="skills-container-sub">
                         {this._renderSkillsFromArray(skills)}
-                    </div>
                 </div>
                 <p>Want to find out more about me? Here is my resumé.</p>
                 <TextBorderedButton
@@ -100,11 +98,11 @@ export default class Skills extends Component{
                 />
                 
                 <style jsx>{`
-                    .skills-section :global(.bordered-button){
+                    .section-skills :global(.bordered-button){
                         font-size: 36px;
                     }
                     
-                    .skills-section{
+                    .section-skills{
                         display: grid;
                         grid-template-columns: 1fr;
                         text-align: center;
@@ -112,16 +110,10 @@ export default class Skills extends Component{
                     
                     .skills-container{
                         display: grid;
-                        grid-template-columns: 10% 1fr 10%;
-                        margin-top: 50px;
+                        grid-template-columns: 1fr 1fr;
+                        margin: 50px 10% 0px;
                     }
                     
-                    .skills-container-sub{
-                        display: grid;
-                        grid-template-columns: 1fr 1fr;
-                        grid-column: 2/3;
-                    }
-
                     h1{
                         color: ${Colors.grayDark};
                         font-size: 48px;
@@ -138,12 +130,8 @@ export default class Skills extends Component{
                     }  
 
                     @media only screen and (max-width: 768px){
-                        .skills-container-sub{
-                        }
-                        
                         .skills-container{
-                            margin-top: 25px;
-                            grid-template-columns: 5% 1fr 5%;
+                            margin: 25px 5% 0px;
                         }
 
                         h1{
@@ -156,7 +144,7 @@ export default class Skills extends Component{
                             margin-top: 25px;
                         }   
 
-                        .skills-section :global(.bordered-button){
+                        .section-skills :global(.bordered-button){
                             width: 150px;
                             height: 38px;
                             font-size: 24px;

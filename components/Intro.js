@@ -66,9 +66,9 @@ export default class Intro extends Component{
 
     render(){
         return(
-            <section>
+            <section className='section-intro'>
                 <div className='background'></div>
-                <img src="https://s3.amazonaws.com/practice-aakash/avatar_wink.svg" width={200} height={220}/>
+                <img src='https://s3.amazonaws.com/practice-aakash/avatar_wink.svg'/>
                 <div className="content">
                     <h1>Hey friend. My name is Aakash!</h1>
                     <p>
@@ -93,10 +93,10 @@ export default class Intro extends Component{
                 <h1>Experience</h1>
                 {this._renderExpCards()}
                 <style jsx>{`
-                    section{
+                    .section-intro{
                         display: grid;
                         grid-template-rows: 120px 100px 1fr 150px 150px auto;
-                        grid-column: 1fr;
+                        grid-template-columns: 1fr;
                         margin-top: 25px;
                         color: white;
                         text-align: center;
@@ -111,6 +111,8 @@ export default class Intro extends Component{
                     img{
                         grid-row: 1/3;
                         grid-column: 1/2;
+                        width: 200px;
+                        height: 220px;
                         justify-self: center;
                     }
 
