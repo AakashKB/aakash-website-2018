@@ -34,6 +34,18 @@ export default class Header extends Component{
                     margin-top: 25px;
                     margin-right: 25px;
                 }
+
+                @media only screen and (max-width:768px){
+                    .links{
+                        display: grid;
+                        grid-auto-flow: column;
+                        grid-row: 1/2;
+                        grid-column: 2/3;
+                        justify-self: end;
+                        margin-top: 25px;
+                        margin-right: 20px;
+                    }
+                }
             `}</style>
         </div>
     );
@@ -41,7 +53,7 @@ export default class Header extends Component{
     render(){
         return(
             <nav>
-                <img src="https://s3.amazonaws.com/practice-aakash/avatar_wink.svg" width={50} height={55}/>
+                <img src="https://s3.amazonaws.com/practice-aakash/avatar_wink.svg"/>
                 {this._renderLinks([
                     {icon:FaGithub,href:'#'},
                     {icon:FaLinkedin,href:'#'},
@@ -62,6 +74,7 @@ export default class Header extends Component{
                     img{
                         margin-left: 25px;
                         margin-top: 25px;
+                        width: 50px;
                     }
 
                     .title{
@@ -75,7 +88,7 @@ export default class Header extends Component{
                     .title h1{
                         font-size: 64px;
                         color: ${Colors.grayDark};
-                        font-weight: bold;
+                        font-weight: 700;
                         margin: 0px 25px;
                         
                     }
@@ -101,6 +114,9 @@ export default class Header extends Component{
 
                         .title h2, .title h3{
                             font-size: 18px;
+                        }
+                        img{
+                            margin-left: 20px;
                         }
                     }
                 `}</style>

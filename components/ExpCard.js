@@ -64,7 +64,7 @@ export default class ExpCard extends Component {
                         padding: 25px 5% 20%;
                     }
 
-                    h1,h3{
+                    h1{
                         font-size: 36px;
                         font-weight: 400;
                         margin: 0px;
@@ -77,6 +77,10 @@ export default class ExpCard extends Component {
                         color: ${Colors.grayLight};
                         margin: 0px;
                         margin-top: 5px;
+                    }
+
+                    h3{
+                        font-weight: 400;
                     }
 
                     .exp-title{
@@ -92,7 +96,7 @@ export default class ExpCard extends Component {
                             margin-bottom: 50px;
                         }
 
-                        h1,h3{
+                        h1{
                             font-size: 24px;
                             margin-top: 10px;
                         }

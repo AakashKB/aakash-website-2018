@@ -4,7 +4,7 @@ export default class BorderedButton extends Component{
     render(){
         return(
             <a href={this.props.href} target='_blank'>
-                <div onMouseOver={this.props.onMouseOver} onMouseOut={this.props.onMouseOut}>
+                <div className='bordered-button' onMouseOver={this.props.onMouseOver} onMouseOut={this.props.onMouseOut}>
                     {this.props.children}
                     <style jsx>{`
                         div{
