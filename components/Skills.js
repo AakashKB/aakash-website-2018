@@ -98,10 +98,6 @@ export default class Skills extends Component{
                 />
                 
                 <style jsx>{`
-                    .section-skills :global(.bordered-button){
-                        font-size: 36px;
-                    }
-                    
                     .section-skills{
                         display: grid;
                         grid-template-columns: 1fr;
@@ -132,6 +128,7 @@ export default class Skills extends Component{
                     .section-skills :global(.bordered-button-text){
                         margin: auto;
                         font-family: 'Roboto Condensed', sans-serif;
+                        font-size: 36px;
                     }
 
                     @media only screen and (max-width: 768px){

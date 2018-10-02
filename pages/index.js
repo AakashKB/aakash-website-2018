@@ -18,6 +18,13 @@ const Index = (props) => (
                 margin: 0;
                 font-family: 'Roboto Condensed', sans-serif;
             }    
+
+            input:focus,
+            select:focus,
+            textarea:focus,
+            button:focus {
+                outline: none;
+            }
         `}</style>
     </div>
 );
