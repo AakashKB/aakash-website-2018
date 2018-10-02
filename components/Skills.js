@@ -149,12 +149,10 @@ export default class Skills extends Component{
                         .section-skills :global(.bordered-button){
                             width: 150px;
                             height: 38px;
-                            font-size: 24px;
                         }
 
-                        .button-text{
+                        .section-skills :global(.bordered-button-text){
                             font-size: 24px;
-                            color: ${Colors.primary};
                         }
                     }
                 `}</style>

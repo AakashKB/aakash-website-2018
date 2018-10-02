@@ -1,4 +1,4 @@
-import {Component, Fragment} from 'react';
+import {Component} from 'react';
 import {FaGithub, FaLinkedin, FaEnvelope} from 'react-icons/fa';
 import IconBorderedButton from './IconBorderedButton';
 import Colors from '../constants/Colors'

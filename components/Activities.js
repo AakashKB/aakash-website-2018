@@ -66,7 +66,8 @@ export default class Activities extends Component{
                         grid-column: 2/3;
                         font-size: 48px;
                         font-weight: 700;
-                        margin: 50px 10% 10px;
+                        margin: 0px;
+                        margin-top: 50px;
                     }
 
                     @media only screen and (max-width: 768px) {
