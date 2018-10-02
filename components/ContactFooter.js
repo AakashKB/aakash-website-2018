@@ -1,5 +1,7 @@
 import { Component } from 'react';
+import {FaGithub, FaLinkedin, FaEnvelope} from 'react-icons/fa';
 import Colors from '../constants/Colors';
+import IconLinks from './IconLinks';
 import ContactForm from './ContactForm';
 import TextBorderedButton from './TextBorderedButton';
 
@@ -15,6 +17,15 @@ export default class ContactFooter extends Component {
                 <footer>
                     <img className = 'avatar' src='https://s3.amazonaws.com/practice-aakash/avatar_wink.svg'/>
                     <p>© Aakash Balaji 2018</p>
+                    <IconLinks 
+                        icons= {[
+                            {icon:FaGithub,href:'#'},
+                            {icon:FaLinkedin,href:'#'},
+                            {icon:FaEnvelope,href:'#'},
+                        ]}
+                        color={'white'}
+                        iconHoverColor={Colors.primary}
+                    />
                     <TextBorderedButton
                         width='200px'
                         height='50px'
@@ -46,7 +57,7 @@ export default class ContactFooter extends Component {
                     .background{
                         grid-column: 1/2;
                         grid-row: 4/6;
-                        background-color: ${Colors.primary};
+                        background: linear-gradient(145deg, ${Colors.primaryLight} 0%, ${Colors.primaryDark} 100%);
                     }
                     
                     footer{
@@ -54,6 +65,7 @@ export default class ContactFooter extends Component {
                         grid-row: 5/6;
                         display: grid;
                         justify-content: center;
+                        padding-bottom: 50px;
                     }
 
                     footer .avatar{
@@ -66,6 +78,12 @@ export default class ContactFooter extends Component {
                         font-size: 24px;
                         margin: 0px;
                         margin-top: 10px;
+                    }
+
+                    footer :global(.links){
+                        margin-top: 10px;
+                        margin-right: 0px;
+                        justify-self: center;
                     }
 
                     h1{
@@ -98,6 +116,19 @@ export default class ContactFooter extends Component {
                         }
 
                         h2{
+                            font-size: 24px;
+                        }
+
+                        footer p{
+                            font-size: 18px;
+                        }
+
+                        footer :global(.bordered-button){
+                            width: 150px;
+                            height: 38px;
+                        }
+
+                        footer :global(.bordered-button-text){
                             font-size: 24px;
                         }
                     }

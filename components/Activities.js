@@ -50,7 +50,7 @@ export default class Activities extends Component{
                         margin-top: 25px;
                         color: white;
                         text-align: center;
-                        background-color: ${Colors.primary};
+                        background: linear-gradient(120deg, ${Colors.primaryLight} 0%, ${Colors.primaryDark} 100%);
                         padding-bottom: 50px;
                     }
 

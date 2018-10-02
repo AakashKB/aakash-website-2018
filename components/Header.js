@@ -1,68 +1,21 @@
 import {Component} from 'react';
 import {FaGithub, FaLinkedin, FaEnvelope} from 'react-icons/fa';
-import IconBorderedButton from './IconBorderedButton';
-import Colors from '../constants/Colors'
+import Colors from '../constants/Colors';
+import IconLinks from './IconLinks';
 
 export default class Header extends Component{
-    state={
-        color:'black'
-    }
-
-    _renderIconBorderedButton = (key, {icon,href}) => (
-        <IconBorderedButton 
-            borderWidth='2px' 
-            borderRadius='100px' 
-            iconSize={30} 
-            icon={icon}
-            color={Colors.primary}
-            iconColor={Colors.primary}
-            href={href}
-            marginLeft='10px'
-            key={key}
-        />
-    );
-    _renderLinks = icons => (
-        <div className='links'>
-            {icons.map((icon,index) => this._renderIconBorderedButton(index, icon))}
-            <style jsx>{`
-                .links{
-                    display: grid;
-                    grid-auto-flow: column;
-                    grid-row: 1/2;
-                    grid-column: 2/3;
-                    justify-self: end;
-                    margin-top: 25px;
-                    margin-right: 25px;
-                }
-
-                @media only screen and (max-width:768px){
-                    .links{
-                        margin-right: 15px;
-                    }
-
-                    .links :global(.bordered-button-icon){
-                        width: 20px;
-                        height: 20px;
-                    }
-
-                    .links :global(.bordered-button){
-                        width: 40px;
-                        height: 40px;
-                    }
-                }
-            `}</style>
-        </div>
-    );
-
     render(){
         return(
             <nav>
                 <img src="https://s3.amazonaws.com/practice-aakash/avatar_wink.svg"/>
-                {this._renderLinks([
-                    {icon:FaGithub,href:'#'},
-                    {icon:FaLinkedin,href:'#'},
-                    {icon:FaEnvelope,href:'#'},
-                ])}
+                <IconLinks 
+                    icons= {[
+                        {icon:FaGithub,href:'#'},
+                        {icon:FaLinkedin,href:'#'},
+                        {icon:FaEnvelope,href:'#'},
+                    ]}
+                    color={Colors.primary}
+                />
                 <div className='title'>
                     <h1>Front End Developer & Entrepreneur</h1>
                     <h2>University of Connecticut, class of 2020</h2>
@@ -109,6 +62,11 @@ export default class Header extends Component{
                         color: ${Colors.grayLight};
                         margin: 0px 25px;
                         font-weight: 300;
+                    }
+
+                    nav :global(.links){
+                        grid-row: 1/2;
+                        grid-column: 2/3;
                     }
 
                     @media only screen and (max-width: 768px) {

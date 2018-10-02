@@ -105,7 +105,7 @@ export default class Intro extends Component{
                     .background{
                         grid-row: 2/6;
                         grid-column: 1/2;
-                        background-color: ${Colors.primary};
+                        background: linear-gradient(120deg, ${Colors.primaryLight} 0%, ${Colors.primaryDark} 100%);
                     }
 
                     img{
