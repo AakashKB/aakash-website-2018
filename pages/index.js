@@ -2,6 +2,7 @@ import Header from '../components/Header';
 import Intro from '../components/Intro';
 import Skills from '../components/Skills';
 import Activities from '../components/Activities';
+import ContactFooter from '../components/ContactFooter';
 
 const Index = (props) => (
     <div>
@@ -9,6 +10,7 @@ const Index = (props) => (
         <Intro/>
         <Skills/>
         <Activities/>
+        <ContactFooter/>
         <style jsx global>{`
             @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700");
 

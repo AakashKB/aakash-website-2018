@@ -37,13 +37,17 @@ export default class Header extends Component{
 
                 @media only screen and (max-width:768px){
                     .links{
-                        display: grid;
-                        grid-auto-flow: column;
-                        grid-row: 1/2;
-                        grid-column: 2/3;
-                        justify-self: end;
-                        margin-top: 25px;
-                        margin-right: 20px;
+                        margin-right: 15px;
+                    }
+
+                    .links :global(.bordered-button-icon){
+                        width: 20px;
+                        height: 20px;
+                    }
+
+                    .links :global(.bordered-button){
+                        width: 40px;
+                        height: 40px;
                     }
                 }
             `}</style>
@@ -74,7 +78,7 @@ export default class Header extends Component{
                     img{
                         margin-left: 25px;
                         margin-top: 25px;
-                        width: 50px;
+                        height: 50px;
                     }
 
                     .title{
@@ -116,7 +120,8 @@ export default class Header extends Component{
                             font-size: 18px;
                         }
                         img{
-                            margin-left: 20px;
+                            margin-left: 15px;
+                            height: 40px;
                         }
                     }
                 `}</style>

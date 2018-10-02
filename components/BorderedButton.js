@@ -4,10 +4,10 @@ export default class BorderedButton extends Component{
     render(){
         return(
             <a href={this.props.href} target='_blank'>
-                <div className='bordered-button' onMouseOver={this.props.onMouseOver} onMouseOut={this.props.onMouseOut}>
+                <button className='bordered-button' onMouseOver={this.props.onMouseOver} onMouseOut={this.props.onMouseOut} type={this.props.buttonType || 'button'}>
                     {this.props.children}
                     <style jsx>{`
-                        div{
+                        .bordered-button{
                             width: ${this.props.width || '50px'};
                             height: ${this.props.height || '50px'};
                             border: ${this.props.borderWidth || '1px'} ${this.props.borderStyle || 'solid'} ${this.props.color || 'black'};
@@ -16,17 +16,19 @@ export default class BorderedButton extends Component{
                             margin-bottom: : ${this.props.marginBottom || '0px'};
                             margin-left: ${this.props.marginLeft || '0px'};
                             margin-right: ${this.props.marginRight || '0px'};
+                            padding-top: ${this.props.paddingTop || '0px'};
+                            padding-bottom: : ${this.props.paddingBottom || '0px'};
+                            padding-left: ${this.props.paddingLeft || '0px'};
+                            padding-right: ${this.props.paddingRight || '0px'};
                             background-color: ${this.props.backgroundColor || 'transparent'};
-                            padding:0px;
-                            justify-content: center;
-                            align-content: center;
-                            display: grid;
+                            text-align: center;
+                            line-height: 50%;
                         }
-                        div:hover{
+                        .bordered-button:hover{
                             background-color: ${this.props.color || 'black'};
                         }
                     `}</style>
-                </div>
+                </button>
             </a>
         );
     }

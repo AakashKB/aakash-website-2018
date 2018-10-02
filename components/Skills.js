@@ -129,6 +129,11 @@ export default class Skills extends Component{
                         margin: 50px 5% 0px;
                     }  
 
+                    .section-skills :global(.bordered-button-text){
+                        margin: auto;
+                        font-family: 'Roboto Condensed', sans-serif;
+                    }
+
                     @media only screen and (max-width: 768px){
                         .skills-container{
                             margin: 25px 5% 0px;
