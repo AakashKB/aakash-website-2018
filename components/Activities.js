@@ -11,6 +11,7 @@ export default class Activities extends Component{
                 <div className='container-activities'>
                     <ActivityCard
                         logoUrl='https://s3.amazonaws.com/practice-aakash/avatar_wink.svg'
+                        backgroundImage='https://s3.amazonaws.com/www.kashkb.com/assets/Homecontrol.jpg'
                         title='Title'
                         content=' Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                                 sed do eiusmod tempor incididunt ut labore et dolore magna 

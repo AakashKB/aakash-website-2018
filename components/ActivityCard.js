@@ -8,11 +8,16 @@ export default class ActivityCard extends Component {
     render() {
         return (
             <div className='card-activity' onMouseEnter={() => this.setState({ hover: true })} onMouseLeave={() => this.setState({ hover: false })}>
-                {this.state.hover ?
-                    <div>
-                        <p>{this.props.content}</p>
-                    </div> :
-                    <img className='logo-activity' src={this.props.logoUrl} alt='Logo' />}
+                
+                    {this.state.hover ?
+                        <div>
+                            <p>{this.props.content}</p>
+                        </div> : 
+                        (this.props.backgroundImage ? <h1>Title</h1> :
+                            <img className='logo-activity' src={this.props.logoUrl} alt='Logo' />
+                        )
+                    }
+                
                 <style jsx>{`
                     .card-activity{
                         display: grid;
@@ -21,11 +26,16 @@ export default class ActivityCard extends Component {
                         box-shadow: 0px 2px 4px rgb(0,0,0,0.1);
                         height: 25vw;
                         background: white;
-                        background-image: ${this.props.backgroundImage || 'none'}
+                        background-image: url(${this.props.backgroundImage});
+                        background-position: center;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        position: relative;
+                        
                     }
-
                     .card-activity:hover{
-                        background: linear-gradient(135deg, ${Colors.accentLight} -50%, ${Colors.accentDark} 125%)
+                        background: linear-gradient(135deg, ${Colors.accentLight} -50%, ${Colors.accentDark} 125%);
+                        filter: blur(0px) contrast(100%);
                     }
 
                     .logo-activity{
