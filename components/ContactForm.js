@@ -32,7 +32,14 @@ export default class ContactForm extends Component {
 
     render() {
         return (
-            <form className='contact-form' name='Contact Form' onSubmit={this.handleSubmit} onReset={this.handleReset} netlify>
+            <form 
+                className='contact-form' 
+                name='contact' 
+                onSubmit={this.handleSubmit} 
+                onReset={this.handleReset} 
+                data-netlify='true'
+                data-netlify-honeypot="bot-field"
+            >
                 <div className='labeled-input'>
                     <label>
                         First name
