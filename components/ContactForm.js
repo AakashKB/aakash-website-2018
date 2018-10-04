@@ -36,6 +36,7 @@ export default class ContactForm extends Component {
                 className='contact-form' 
                 name='contact' 
                 //onSubmit={this.handleSubmit} 
+                method='post'
                 onReset={this.handleReset} 
                 data-netlify='true'
                 data-netlify-honeypot="bot-field"
@@ -64,7 +65,7 @@ export default class ContactForm extends Component {
                     </label>
                     <textarea type='text' name='message' value={this.state.message} onChange={this.handleInputChanges} />
                 </div>
-                {/* <TextBorderedButton
+                <TextBorderedButton
                     width='200px'
                     height='50px'
                     color={Colors.primary}
@@ -76,8 +77,7 @@ export default class ContactForm extends Component {
                     text='Submit'
                     textColor={Colors.primary}
                     buttonType='submit'
-                /> */}
-                <button type='submit'>Submit</button>
+                />
                 <IconContext.Provider value={{className: "icon-reset" }}>
                     <button className='button-reset' type='reset'>
                         <FaRedo size={20} color={Colors.grayLight}/>
