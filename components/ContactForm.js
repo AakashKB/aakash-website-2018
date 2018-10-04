@@ -16,7 +16,7 @@ export default class ContactForm extends Component {
 
     handleSubmit = (event) => {
         console.log(this.state)
-        alert('Submitted')
+        //alert('Submitted')
         event.preventDefault();
     }
 
