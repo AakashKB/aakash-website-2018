@@ -2,7 +2,8 @@ import { Component } from 'react';
 import Colors from '../constants/Colors';
 import TextBorderedButton from './TextBorderedButton';
 
-const ASSET_URL = 'https://s3.amazonaws.com/kashkb-assets/';
+//const ASSET_URL = 'https://s3.amazonaws.com/kashkb-assets/';
+const ASSET_URL = '../../assets/';
 
 export default class Skills extends Component{
 
@@ -88,7 +89,7 @@ export default class Skills extends Component{
                     marginRight='auto'
                     marginTop='10px'
                     text='Resumé'
-                    href='https://s3.amazonaws.com/kashkb-assets/resume.pdf'
+                    href={`${ASSET_URL}resume.pdf`}
                     textColor={Colors.primary}
                 />
                 
