@@ -3,7 +3,7 @@ import Colors from '../constants/Colors';
 import TextBorderedButton from './TextBorderedButton';
 
 //const ASSET_URL = 'https://s3.amazonaws.com/kashkb-assets/';
-const ASSET_URL = '../../assets/';
+const ASSET_URL = '/static/assets/';
 
 export default class Skills extends Component{
 
