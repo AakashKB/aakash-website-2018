@@ -3,7 +3,7 @@ import IconBorderedButton from './IconBorderedButton';
 
 export default class IconLinks extends Component{
   
-    _renderIconBorderedButton = (key, {icon,href}) => (
+    _renderIconBorderedButton = (key, {icon,href,target}) => (
         <IconBorderedButton 
             borderWidth='2px' 
             borderRadius='100px' 
@@ -13,6 +13,7 @@ export default class IconLinks extends Component{
             iconColor={this.props.color}
             iconHoverColor={this.props.iconHoverColor}
             href={href}
+            target={target}
             key={key}
         />
     );

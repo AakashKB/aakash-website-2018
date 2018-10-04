@@ -3,7 +3,7 @@ import { Component } from 'react';
 export default class BorderedButton extends Component{
     render(){
         return(
-            <a href={this.props.href} target='_blank'>
+            <a href={this.props.href} target={this.props.target || '_blank'}>
                 <button className='bordered-button' onMouseOver={this.props.onMouseOver} onMouseOut={this.props.onMouseOut} type={this.props.buttonType || 'button'}>
                     {this.props.children}
                     <style jsx>{`

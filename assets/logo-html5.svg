@@ -1,0 +1,17 @@
+<svg width="363" height="412" xmlns="http://www.w3.org/2000/svg">
+ <title>HTML5 Logo</title>
+
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="365" height="414" id="canvas_background" fill="none"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_1">
+   <path fill="#e44d26" d="m33.000002,370.400002l-33,-370.4l362.8,0l-33,370.2l-148.7,41.2" id="svg_2"/>
+   <path fill="#f16529" d="m181.400002,379.900002l0,-349.5l148.3,0l-28.3,316" id="svg_3"/>
+   <path fill="#ebebeb" d="m67.400002,75.700002l114,0l0,45.4l-64.2,0l4.2,46.5l60,0l0,45.3l-101.6,0m2,22.8l45.6,0l3.2,36.3l50.8,13.6l0,47.4l-93.2,-26" id="svg_4"/>
+   <path fill="#fff" d="m295.000002,75.700002l-113.8,0l0,45.4l109.6,0m-4.1,46.5l-105.5,0l0,45.4l56,0l-5.3,59l-50.7,13.6l0,47.2l93,-25.8" id="svg_5"/>
+  </g>
+ </g>
+</svg>

@@ -10,14 +10,14 @@ export default class Header extends Component{
                 <img src="https://s3.amazonaws.com/practice-aakash/avatar_wink.svg"/>
                 <IconLinks 
                     icons= {[
-                        {icon:FaGithub,href:'#'},
-                        {icon:FaLinkedin,href:'#'},
-                        {icon:FaEnvelope,href:'#'},
+                        {icon:FaGithub,href:'https://github.com/AakashKB'},
+                        {icon:FaLinkedin,href:'https://www.linkedin.com/in/aakashbalaji/'},
+                        {icon:FaEnvelope,href:'mailto:aakashkbalaji@gmail.com',target:'_self'},
                     ]}
                     color={Colors.primary}
                 />
                 <div className='title'>
-                    <h1>Front End Developer & Entrepreneur</h1>
+                    <h1>Full Stack Developer & Entrepreneur</h1>
                     <h2>University of Connecticut, class of 2020</h2>
                     <h3>Computer Science and Engineering</h3>
                 </div>

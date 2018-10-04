@@ -21,6 +21,7 @@ export default class ActivityCard extends Component {
                         box-shadow: 0px 2px 4px rgb(0,0,0,0.1);
                         height: 25vw;
                         background: white;
+                        background-image: ${this.props.backgroundImage || 'none'}
                     }
 
                     .card-activity:hover{

@@ -2,30 +2,32 @@ import { Component } from 'react';
 import Colors from '../constants/Colors';
 import TextBorderedButton from './TextBorderedButton';
 
+const ASSET_URL = 'https://s3.amazonaws.com/kashkb-assets/';
+
 export default class Skills extends Component{
 
     _renderSkillsFromArray = arr =>(
-        arr.map((item, index) => (this._renderSkill(item.name, item.url, index)))
+        arr.map((item, index) => (this._renderSkill(item.name, index)))
     )
 
-    _renderSkill = (name, logoUrl, key) => (
+    _renderSkill = (name, key) => (
         <div
             key={key || 0}
         >
             <h2>{name}</h2>
-            <img src={logoUrl} alt={`${name} logo`}/>
+            <img src={`${ASSET_URL}logo-${name.toLowerCase().replace(' ','')}.svg`} alt={`${name} logo`}/>
             <style jsx>{`
                 h2{
                     color: ${Colors.grayLight};
                     font-size: 48px;
-                    font-weight: 300;
+                    font-weight: 400;
                     margin: 0px;
                     margin-top: 25px;
                 }
 
                 img{
                     margin: 25px auto 0px;
-                    width: 150px;
+                    height: 150px;
                 }
 
                 @media only screen and (max-width: 768px){
@@ -35,7 +37,7 @@ export default class Skills extends Component{
 
                     img{
                         margin: 25px auto 0px;
-                        width: 100px;
+                        height: 100px;
                     }
                 }
             `}</style>
@@ -45,36 +47,28 @@ export default class Skills extends Component{
     render(){
         const skills = [
             {
-                name:'Skill',
-                url:'https://s3.amazonaws.com/practice-aakash/react-icon-fit.svg'
+                name:'HTML 5',
             },
             {
-                name:'Skill',
-                url:'https://s3.amazonaws.com/practice-aakash/react-icon-fit.svg'
+                name:'CSS 3',
             },
             {
-                name:'Skill',
-                url:'https://s3.amazonaws.com/practice-aakash/react-icon-fit.svg'
+                name:'JavaScript',
             },
             {
-                name:'Skill',
-                url:'https://s3.amazonaws.com/practice-aakash/react-icon-fit.svg'
+                name:'React',
             },
             {
-                name:'Skill',
-                url:'https://s3.amazonaws.com/practice-aakash/react-icon-fit.svg'
+                name:'Node.js',
             },
             {
-                name:'Skill',
-                url:'https://s3.amazonaws.com/practice-aakash/react-icon-fit.svg'
+                name:'AWS',
             },
             {
-                name:'Skill',
-                url:'https://s3.amazonaws.com/practice-aakash/react-icon-fit.svg'
+                name:'Java',
             },
             {
-                name:'Skill',
-                url:'https://s3.amazonaws.com/practice-aakash/react-icon-fit.svg'
+                name:'Python',
             }
         ];
         return(
@@ -94,6 +88,7 @@ export default class Skills extends Component{
                     marginRight='auto'
                     marginTop='10px'
                     text='Resumé'
+                    href='https://s3.amazonaws.com/kashkb-assets/resume.pdf'
                     textColor={Colors.primary}
                 />
                 

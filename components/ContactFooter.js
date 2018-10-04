@@ -19,9 +19,9 @@ export default class ContactFooter extends Component {
                     <p>© Aakash Balaji 2018</p>
                     <IconLinks 
                         icons= {[
-                            {icon:FaGithub,href:'#'},
-                            {icon:FaLinkedin,href:'#'},
-                            {icon:FaEnvelope,href:'#'},
+                            {icon:FaGithub,href:'https://github.com/AakashKB'},
+                            {icon:FaLinkedin,href:'https://www.linkedin.com/in/aakashbalaji/'},
+                            {icon:FaEnvelope,href:'mailto:aakashkbalaji@gmail.com',target:'_self'},
                         ]}
                         color={'white'}
                         iconHoverColor={Colors.primary}
@@ -37,6 +37,7 @@ export default class ContactFooter extends Component {
                         marginTop='10px'
                         text='Resumé'
                         textColor={'white'}
+                        href='https://s3.amazonaws.com/kashkb-assets/resume.pdf'
                         textHoverColor={Colors.primary}
                     />
                 </footer>
