@@ -15,7 +15,7 @@ export default class ContactFooter extends Component {
                 <h2>Awesome! Let me know how I can help you below!</h2>
                 <ContactForm/>
                 <footer>
-                    <img className = 'avatar' src='https://s3.amazonaws.com/practice-aakash/avatar_wink.svg'/>
+                    <img className = 'avatar' src='/static/assets/aakash-avatar-wink.svg'/>
                     <p>© Aakash Balaji 2018</p>
                     <IconLinks 
                         icons= {[
@@ -37,7 +37,7 @@ export default class ContactFooter extends Component {
                         marginTop='10px'
                         text='Resumé'
                         textColor={'white'}
-                        href='https://s3.amazonaws.com/kashkb-assets/resume.pdf'
+                        href='/static/assets/resume.pdf'
                         textHoverColor={Colors.primary}
                     />
                 </footer>

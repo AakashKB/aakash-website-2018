@@ -68,7 +68,7 @@ export default class Intro extends Component{
         return(
             <section className='section-intro'>
                 <div className='background'></div>
-                <img src='https://s3.amazonaws.com/practice-aakash/avatar_wink.svg'/>
+                <img src='/static/assets/aakash-avatar-wink.svg'/>
                 <div className="content">
                     <h1>Hey friend. My name is Aakash!</h1>
                     <p>

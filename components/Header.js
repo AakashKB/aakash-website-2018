@@ -7,7 +7,7 @@ export default class Header extends Component{
     render(){
         return(
             <nav>
-                <img src="https://s3.amazonaws.com/practice-aakash/avatar_wink.svg"/>
+                <img src='/static/assets/aakash-avatar-wink.svg'/>
                 <IconLinks 
                     icons= {[
                         {icon:FaGithub,href:'https://github.com/AakashKB'},
