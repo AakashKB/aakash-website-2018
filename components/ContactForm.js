@@ -33,11 +33,11 @@ export default class ContactForm extends Component {
     render() {
         return (
             <form 
-                className='contact-form' 
+                //className='contact-form' 
                 name='contact' 
                 //onSubmit={this.handleSubmit} 
                 method='post'
-                onReset={this.handleReset} 
+                //onReset={this.handleReset} 
                 data-netlify='true'
                 data-netlify-honeypot="bot-field"
             >
@@ -57,15 +57,15 @@ export default class ContactForm extends Component {
                     <label>
                         Email
                     </label>
-                    <input type='text' name='email' value={this.state.email} onChange={this.handleInputChanges} />
+                    <input type='email' name='email' value={this.state.email} onChange={this.handleInputChanges} />
                 </div>
                 <div className='labeled-input long'>
                     <label>
                         Message
                     </label>
-                    <textarea type='text' name='message' value={this.state.message} onChange={this.handleInputChanges} />
+                    <textarea name='message' value={this.state.message} onChange={this.handleInputChanges} />
                 </div>
-                <TextBorderedButton
+                {/* <TextBorderedButton
                     width='200px'
                     height='50px'
                     color={Colors.primary}
@@ -77,7 +77,8 @@ export default class ContactForm extends Component {
                     text='Submit'
                     textColor={Colors.primary}
                     buttonType='submit'
-                />
+                /> */}
+                <button type='button'>Submit</button>
                 <IconContext.Provider value={{className: "icon-reset" }}>
                     <button className='button-reset' type='reset'>
                         <FaRedo size={20} color={Colors.grayLight}/>
