@@ -78,7 +78,7 @@ export default class ContactForm extends Component {
                     textColor={Colors.primary}
                     buttonType='submit'
                 /> */}
-                <button type='button'>Submit</button>
+                <button type='submit'>Submit</button>
                 <IconContext.Provider value={{className: "icon-reset" }}>
                     <button className='button-reset' type='reset'>
                         <FaRedo size={20} color={Colors.grayLight}/>
