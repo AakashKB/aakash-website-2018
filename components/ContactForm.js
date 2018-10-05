@@ -27,20 +27,21 @@ export default class ContactForm extends Component {
             email: '',
             message: ''
         });
-        event.preventDefault();
+        //event.preventDefault();
     }
 
     render() {
         return (
             <form 
-                //className='contact-form' 
+                className='contact-form' 
                 name='contact' 
                 onSubmit={this.handleSubmit} 
                 method='post'
-                //onReset={this.handleReset} 
+                onReset={this.handleReset} 
                 data-netlify='true'
                 data-netlify-honeypot="bot-field"
             >
+                <input type="hidden" name="form-name" value="test" />
                 <div className='labeled-input'>
                     <label>
                         First name
