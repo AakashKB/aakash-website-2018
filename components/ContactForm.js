@@ -16,7 +16,7 @@ export default class ContactForm extends Component {
 
     handleSubmit = (event) => {
         console.log(this.state)
-        //alert('Submitted')
+        alert('Submitted')
         event.preventDefault();
     }
 
@@ -27,48 +27,42 @@ export default class ContactForm extends Component {
             email: '',
             message: ''
         });
-        //event.preventDefault();
+        event.preventDefault();
     }
 
     render() {
         return (
-<<<<<<< HEAD
             <form 
                 className='contact-form' 
-                name='contact' 
-                onSubmit={this.handleSubmit} 
+                //onSubmit={this.handleSubmit} 
                 method='post'
-                onReset={this.handleReset} 
+                onReset={this.handleReset}
                 data-netlify='true'
-                data-netlify-honeypot="bot-field"
+                data-netlify-honeypot='bot-field'
             >
-                <input type="hidden" name="form-name" value="contact" />
-=======
-            <form className='contact-form' onSubmit={this.handleSubmit} onReset={this.handleReset} netlify>
->>>>>>> parent of 351e913... Form name added
                 <div className='labeled-input'>
                     <label>
                         First name
                     </label>
-                    <input type='text' name='firstName' value={this.state.firstName} onChange={this.handleInputChanges} />
+                    <input type='text' name='firstName'/>
                 </div>
                 <div className='labeled-input'>
                     <label>
                         Last name
                     </label>
-                    <input type='text' name='lastName' value={this.state.lastName} onChange={this.handleInputChanges} />
+                    <input type='text' name='lastName'/>
                 </div>
                 <div className='labeled-input long'>
                     <label>
                         Email
                     </label>
-                    <input type='email' name='email' value={this.state.email} onChange={this.handleInputChanges} />
+                    <input type='email' name='email'/>
                 </div>
                 <div className='labeled-input long'>
                     <label>
                         Message
                     </label>
-                    <textarea name='message' value={this.state.message} onChange={this.handleInputChanges} />
+                    <textarea name='message'/>
                 </div>
                 {/* <TextBorderedButton
                     width='200px'
@@ -83,7 +77,7 @@ export default class ContactForm extends Component {
                     textColor={Colors.primary}
                     buttonType='submit'
                 /> */}
-                <button type='submit'>Submit</button>
+                <button>Submit</button>
                 <IconContext.Provider value={{className: "icon-reset" }}>
                     <button className='button-reset' type='reset'>
                         <FaRedo size={20} color={Colors.grayLight}/>
