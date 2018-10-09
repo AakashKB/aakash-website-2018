@@ -35,7 +35,7 @@ export default class ContactForm extends Component {
                 className='contact-form' 
                 //onSubmit={this.handleSubmit} 
                 method='POST'
-                action='//formspree.io/aakashbalaji.kumar@gmail.com'
+                action='/'
                 onReset={this.handleReset}
                 data-netlify='true'
             >
