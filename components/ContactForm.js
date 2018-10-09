@@ -22,7 +22,8 @@ export default class ContactForm extends Component {
                 className='contact-form' 
                 method='POST'
                 action='//formspree.io/aakashkbalaji@gmail.com'
-                onReset={this.handleReset}s
+                ref={(self)=>this.myForm = self}
+                onReset={()=> this.myForm.reset()}
             >
                 <div className='labeled-input'>
                     <label>
