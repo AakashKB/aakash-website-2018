@@ -35,10 +35,9 @@ export default class ContactForm extends Component {
             <form 
                 className='contact-form' 
                 //onSubmit={this.handleSubmit} 
-                method='post'
+                action='/'
                 onReset={this.handleReset}
-                data-netlify='true'
-                data-netlify-honeypot='bot-field'
+                netlify
             >
                 <div className='labeled-input'>
                     <label>
