@@ -5,19 +5,6 @@ import {FaRedo} from 'react-icons/fa';
 import { IconContext } from "react-icons";
 
 export default class ContactForm extends Component {
-    state={
-        firstName: '',
-        lastName: '',
-        email: '',
-        message: ''
-    }
-
-    handleInputChanges = (event) => this.setState({[event.target.name]:event.target.value});
-
-    handleSubmit = (event) => {
-        alert('Submitted')
-        event.preventDefault();
-    }
 
     handleReset = (event) => {
         this.setState({
@@ -33,11 +20,9 @@ export default class ContactForm extends Component {
         return (
             <form 
                 className='contact-form' 
-                //onSubmit={this.handleSubmit} 
                 method='POST'
-                action=''
-                onReset={this.handleReset}
-                data-netlify='true'
+                action='//formspree.io/aakashkbalaji@gmail.com'
+                onReset={this.handleReset}s
             >
                 <div className='labeled-input'>
                     <label>
@@ -63,7 +48,7 @@ export default class ContactForm extends Component {
                     </label>
                     <textarea name='message'/>
                 </div>
-                {/* <TextBorderedButton
+                <TextBorderedButton
                     width='200px'
                     height='50px'
                     color={Colors.primary}
@@ -75,8 +60,7 @@ export default class ContactForm extends Component {
                     text='Submit'
                     textColor={Colors.primary}
                     buttonType='submit'
-                /> */}
-                <button>Submit</button>
+                />
                 <IconContext.Provider value={{className: "icon-reset" }}>
                     <button className='button-reset' type='reset'>
                         <FaRedo size={20} color={Colors.grayLight}/>
