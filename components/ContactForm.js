@@ -15,7 +15,6 @@ export default class ContactForm extends Component {
     handleInputChanges = (event) => this.setState({[event.target.name]:event.target.value});
 
     handleSubmit = (event) => {
-        console.log(this.state)
         alert('Submitted')
         event.preventDefault();
     }
@@ -34,8 +33,8 @@ export default class ContactForm extends Component {
         return (
             <form 
                 className='contact-form' 
-                //onSubmit={this.handleSubmit} 
-                action='/'
+                onSubmit={this.handleSubmit} 
+                //action='/'
                 onReset={this.handleReset}
                 netlify
             >
