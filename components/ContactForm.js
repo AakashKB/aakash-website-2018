@@ -5,17 +5,6 @@ import {FaRedo} from 'react-icons/fa';
 import { IconContext } from "react-icons";
 
 export default class ContactForm extends Component {
-
-    handleReset = (event) => {
-        this.setState({
-            firstName: '',
-            lastName: '',
-            email: '',
-            message: ''
-        });
-        event.preventDefault();
-    }
-
     render() {
         return (
             <form 

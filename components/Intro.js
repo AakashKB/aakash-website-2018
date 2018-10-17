@@ -5,47 +5,50 @@ import ExpCard from './ExpCard';
 export default class Intro extends Component{
 
     _renderExpCards = () => {
-        const languages = ['Language','Language','Language','Language','Language','Tool','Tool'];
-        const exp = [
-            'I did this with that using this and that',
-            'I did this with that using this and that',
-            'I did this with that using this and that'
-        ];
-
         return(
             <div className="exp-card-container">
                 <ExpCard
                     gridColumn='2/3'
-                    company='Company'
-                    role='Role'
+                    company='Cigna'
+                    role='Software Architect (Intern)'
                     startMonth='Jan'
                     startYear='2018'
-                    endMonth='Dec'
-                    endYear='2018'
-                    languages={languages}
-                    exp={exp}
+                    endMonth='Present'
+                    endYear=''
+                    languages={['JavaScript','React Native','Java','Python','Tensor Flow','Andoid Studio', 'Node.js', 'Express','MongoDB']}
+                    exp={[
+                        'Utilize MongoDB, Node Js, and Express to develop a comprehensive backend for a leaderboard system',
+                        'Develop a cross-platform mobile application, connected to a provider information database on a distributed ledger, using JavaScript and React Native',
+                        'Develop a voice navigation feature for an android application using Java, Python, and Tensor Flow'
+                    ]}
                 />
                 <ExpCard 
                     gridColumn='3/4'
-                    company='Company'
-                    role='Role'
-                    startMonth='Jan'
-                    startYear='2018'
-                    endMonth='Dec'
-                    endYear='2018'
-                    languages={languages}
-                    exp={exp}
+                    company='Xamax Industries'
+                    role='Software Engineer (Intern)'
+                    startMonth='Dec'
+                    startYear='2016'
+                    endMonth='Aug'
+                    endYear='2017'
+                    languages={['Python','VBA','MS Access','MS Excel','\u00A0','\u00A0', '\u00A0','\u00A0','\u00A0']}
+                    exp={[
+                        'Developed a program that automates material testing tasks to increase company efficiency using Python and VBA',
+                        'Worked closely with colleagues to expand and innovate data management systems via MS Access',
+                        'Developed a proprietary system that eliminated need for third party software, therefore, decreasing annual costs'
+                    ]}
                 />
                 <ExpCard 
                     gridColumn='4/5'
-                    company='Company'
-                    role='Role'
+                    company='University of Connecticut'
+                    role='Software Developer'
                     startMonth='Jan'
-                    startYear='2018'
-                    endMonth='Dec'
-                    endYear='2018'
-                    languages={languages}
-                    exp={exp}
+                    startYear='2017'
+                    endMonth='May'
+                    endYear='2017'
+                    languages={['Python','\u00A0','\u00A0','\u00A0','\u00A0','\u00A0', '\u00A0', '\u00A0','\u00A0']}
+                    exp={[
+                        'Developed a GUI for a traffic data collection tool using Python',
+                    ]}
                 />
                 <style jsx>{`
                     .exp-card-container{
@@ -72,22 +75,14 @@ export default class Intro extends Component{
                 <div className="content">
                     <h1>Hey friend. My name is Aakash!</h1>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna 
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                        Duis aute irure dolor in reprehenderit in voluptate velit 
-                        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-                        occaecat cupidatat non proident, sunt in culpa qui officia 
-                        deserunt mollit anim id est laborum.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                        sed do eiusmod tempor incididunt ut labore et dolore magna 
-                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                        ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                        Duis aute irure dolor in reprehenderit in voluptate velit 
-                        esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-                        occaecat cupidatat non proident, sunt in culpa qui officia 
-                        deserunt mollit anim id est laborum.
+                        I've been enjoying coding for the past six years. I started with simple websites and
+                        a couple games. More recently, I've been doing a lot of web and mobile app
+                        development. I'm primarily a front-end developer and I, am excited to say, have
+                        started delving into back-end world. Aside form being a full time student with an
+                        internship at Cigna, I also like to freelance on the side. Entrepreneurhsip is another
+                        passion of mine! I am currently working on an app based startup for efficiently connecting
+                        your digital profiles. I'll be sure to add a link to the app as soon as it's live :).
+                        Scroll down to learn more about me and see what I've been up to! 
                     </p>
                 </div>
                 <h1>Experience</h1>

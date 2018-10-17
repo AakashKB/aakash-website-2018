@@ -23,6 +23,7 @@ export default class BorderedButton extends Component{
                             background-color: ${this.props.backgroundColor || 'transparent'};
                             text-align: center;
                             line-height: 50%;
+                            transition: background-color 0.5s;
                         }
                         .bordered-button:hover{
                             background-color: ${this.props.color || 'black'};

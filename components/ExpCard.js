@@ -5,16 +5,19 @@ export default class ExpCard extends Component {
 
     _renderListItem = (item, key) => (
         <li key={key}>
-            {item}
+            <span>{item}</span>
             <style jsx>{`
                 li{
-                    margin-top: 2px;
+                    margin-top: 5px;
+                }
+                span{
+                    color: ${Colors.grayDark}
                 }
             `}</style>
         </li>
     );
 
-    _renderListFromArray = (arr) => (
+    _renderListFromArray = (arr, bullets) => (
         <ul>
             {arr.map((item, key) => this._renderListItem(item, key))}
             <style jsx>{`
@@ -22,9 +25,10 @@ export default class ExpCard extends Component {
                     font-size: 24px;
                     font-weight: 300;
                     padding: 0px;
-                    margin: 0px;
-                    margin-top: 5px;
-                    list-style: none;
+                    margin: 5px 5% 0px;
+                    text-align: ${bullets ? 'start' : 'center'};
+                    list-style: ${bullets || 'none'};
+                    color: ${Colors.primary}
                 }
 
                 @media only screen and (max-width: 768px) {
@@ -48,7 +52,7 @@ export default class ExpCard extends Component {
                 <h1 className='exp-title'>Languages/Tools I used:</h1>
                 {this._renderListFromArray(this.props.languages)}
                 <h1 className='exp-title'>What I did:</h1>
-                {this._renderListFromArray(this.props.exp)}
+                {this._renderListFromArray(this.props.exp, true)}
                 <style jsx>{`
                     .exp-card{
                         color: ${Colors.grayDark};

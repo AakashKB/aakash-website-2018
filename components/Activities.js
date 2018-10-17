@@ -10,37 +10,36 @@ export default class Activities extends Component{
                 <h1>Other Activities</h1>
                 <div className='container-activities'>
                     <ActivityCard
-                        logoUrl='https://s3.amazonaws.com/practice-aakash/avatar_wink.svg'
-                        backgroundImage='https://s3.amazonaws.com/www.kashkb.com/assets/Homecontrol.jpg'
-                        title='Title'
-                        content=' Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt ut labore et dolore magna 
-                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+                        backgroundImage='/static/assets/Homecontrol.jpg'
+                        backgroundColor= '#2c3e50'
+                        startOpacity = {0.4}
+                        title='Home Control'
+                        content="A summer project where I configured the lights in my room to work with Alexa.
+                                I didn't want to use an 'out of the box' solution so I bought my own components,
+                                tore down the walls in my room, reconfigured the wiring, and cleaned everything up.
+                                A great project for learning about home improvement and IOT"
+                                
                     />
                     <ActivityCard
-                        logoUrl='https://s3.amazonaws.com/practice-aakash/avatar_wink.svg'
-                        title='Title'
-                        content=' Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt ut labore et dolore magna 
-                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+                        logoUrl='/static/assets/logo-frc.svg'
+                        content='A few parts, 6 weeks, and an awesome team. First Robotics is a competition that
+                                truly shaped my life and inspired to be an engineer. I started as an assistant
+                                and worked up to becoming the lead of the programming team. It was a wonderful oppurtunity
+                                to hone my skills, mentor my peers, and work with a team!'
                     />
                     <ActivityCard
-                        logoUrl='https://s3.amazonaws.com/practice-aakash/avatar_wink.svg'
-                        title='Title'
-                        content=' Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt ut labore et dolore magna 
-                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+                        backgroundImage='/static/assets/hh.jpg'
+                        backgroundColor= '#2B2728'
+                        content='The first of my many hackathons. I learned Kotlin, and Android studio in 24 hours to
+                                build a simple app that shows you were a book in a library is located when you scan it.
+                                It was truly a great experience, we even won a sub category!'
                     />
                     <ActivityCard
-                        logoUrl='https://s3.amazonaws.com/practice-aakash/avatar_wink.svg'
-                        title='Title'
-                        content=' Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt ut labore et dolore magna 
-                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                                ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+                        logoUrl='/static/assets/logo-dropboard.svg'
+                        backgroundColor='#77B3D4'
+                        content='A startup inspired from a hackathon project. Our team built a collaborative, social
+                                drawing app and released it to about 25 alpha testers. This was my first real taste of
+                                entrepreneurship and it has inspired me to further continue on this path.'
                     />
                 </div>
                 
