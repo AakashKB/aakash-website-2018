@@ -18,7 +18,7 @@ export default class Header extends Component{
                 />
                 <div className='title'>
                     <h1>Full Stack Developer & Entrepreneur</h1>
-                    <h2>University of Connecticut, class of 2000</h2>
+                    <h2>University of Connecticut, class of 2020</h2>
                     <h3>Computer Science and Engineering</h3>
                 </div>
                 <style jsx>{`
