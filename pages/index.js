@@ -4,6 +4,14 @@ import Skills from '../components/Skills';
 import Activities from '../components/Activities';
 import ContactFooter from '../components/ContactFooter';
 
+/* TODO: 
+*   1. Check mobile responsiveness, althought it seems to work, it does not. Maybe worry about orientation?
+*   5. Fix Activity Card zoom
+*   2. Refactor CSS including browser optimization
+*   3. Add Favicon
+*   4. Optimize based on google insights
+*   5. Check design with Renoj
+*/
 const Index = (props) => (
     <div>
         <Header/>
