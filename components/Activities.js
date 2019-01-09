@@ -17,7 +17,7 @@ export default class Activities extends Component{
                         content="A summer project where I configured the lights in my room to work with Alexa.
                                 I didn't want to use an 'out of the box' solution so I bought my own components,
                                 tore down the walls in my room, reconfigured the wiring, and cleaned everything up.
-                                A great project for learning about home improvement and IOT"
+                                A great project for learning about home improvement and IOT."
                                 
                     />
                     <ActivityCard
