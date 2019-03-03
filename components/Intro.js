@@ -15,9 +15,9 @@ export default class Intro extends Component{
                     startYear='2018'
                     endMonth='Present'
                     endYear=''
-                    languages={['JavaScript','React Native','Java','Python','Tensor Flow','Andoid Studio', 'Node.js', 'Express','MongoDB']}
+                    languages={['JavaScript','React Native','Java','Python','TensorFlow','Andoid Studio', 'Node.js', 'Express','MongoDB']}
                     exp={[
-                        'Utilize MongoDB, Node Js, and Express to develop a comprehensive backend for a leaderboard system',
+                        'Utilize MongoDB, Node.js, and Express to develop a comprehensive backend for a leaderboard system',
                         'Develop a cross-platform mobile application, connected to a provider information database on a distributed ledger, using JavaScript and React Native',
                         'Develop a voice navigation feature for an android application using Java, Python, and Tensor Flow'
                     ]}
@@ -77,9 +77,9 @@ export default class Intro extends Component{
                     <p>
                         I've been enjoying coding for the past six years. I started with simple websites and
                         a couple games. More recently, I've been doing a lot of web and mobile app
-                        development. I'm primarily a front-end developer and I, am excited to say, have
-                        started delving into back-end world. Aside form being a full time student with an
-                        internship at Cigna, I also like to freelance on the side. Entrepreneurhsip is another
+                        development. I'm primarily a front-end developer and, I am excited to say, have
+                        started delving into the back-end world. Aside from being a full time student with an
+                        internship at Cigna, I also like to freelance on the side. Entrepreneurship is another
                         passion of mine! I am currently working on an app based startup for efficiently connecting
                         your digital profiles. I'll be sure to add a link to the app as soon as it's live :).
                         Scroll down to learn more about me and see what I've been up to! 
