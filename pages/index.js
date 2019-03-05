@@ -6,7 +6,6 @@ import ContactFooter from '../components/ContactFooter';
 import Head from 'next/head'
 
 /* TODO: 
-*   1. Check mobile responsiveness, althought it seems to work, it does not. Maybe worry about orientation?
 *   5. Fix Activity Card zoom
 *   2. Refactor CSS including browser optimization
 *   3. Add Favicon
