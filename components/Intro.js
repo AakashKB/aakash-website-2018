@@ -7,7 +7,7 @@ export default class Intro extends Component {
     return (
       <div className="exp-card-container">
         <ExpCard
-          gridColumn="4/5"
+          gridColumn="2/3"
           company="LoanSnap"
           role="Full Stack Engineer"
           startMonth="Jun"
@@ -32,7 +32,7 @@ export default class Intro extends Component {
           ]}
         />
         <ExpCard
-          gridColumn="2/3"
+          gridColumn="3/4"
           company="Cigna"
           role="Software Architect (Intern)"
           startMonth="Jan"
@@ -57,7 +57,7 @@ export default class Intro extends Component {
           ]}
         />
         <ExpCard
-          gridColumn="3/4"
+          gridColumn="4/5"
           company="Xamax Industries"
           role="Software Engineer (Intern)"
           startMonth="Dec"
